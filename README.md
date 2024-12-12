@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 네이버맵 프로젝트
 
-## Getting Started
+이 프로젝트는 네이버맵을 활용하여 거리뷰, 교통량 표시, 거리뷰 표시 등의 기능을 Next.js로 구현한 프로젝트입니다. 현재 위치를 `navigator.geolocation`을 통해 표시하며, 지속적으로 업데이트될 예정입니다. 향후 마커 표시 및 지도 내 `polygon`을 이용한 영역 표시 기능이 추가될 예정입니다.
 
-First, run the development server:
+## 주요 기능
+
+- **거리뷰**: 네이버맵의 거리뷰 기능을 통해 사용자가 선택한 위치의 거리뷰를 제공합니다.
+- **교통량 표시**: 실시간 교통량 정보를 지도에 표시합니다.
+- **현재 위치 표시**: 사용자의 현재 위치를 지도에 마커로 표시합니다.
+
+## 사용 기술
+
+- **Next.js**: React 기반의 서버 사이드 렌더링 프레임워크로, 빠른 페이지 로딩과 SEO 최적화를 제공합니다.
+- **React**: 사용자 인터페이스를 구축하기 위한 JavaScript 라이브러리입니다.
+- **TypeScript**: JavaScript의 슈퍼셋으로, 정적 타입을 지원하여 코드의 안정성을 높입니다.
+- **Tailwind CSS**: 유틸리티 기반의 CSS 프레임워크로, 빠르고 효율적인 스타일링을 지원합니다.
+
+## 설치 및 실행
+
+### 실행
 
 ```bash
-npm run dev
+npm run start
 # or
-yarn dev
+yarn start
 # or
-pnpm dev
+pnpm start
 # or
-bun dev
+bun start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 패키지 정보
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`package.json` 파일에 정의된 주요 패키지 정보는 다음과 같습니다:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **react**: ^19.0.0
+- **react-dom**: ^19.0.0
+- **next**: 15.1.0
+- **typescript**: ^5
+- **tailwindcss**: ^3.4.1
+- **eslint**: ^9
 
-## Learn More
+## 향후 계획
 
-To learn more about Next.js, take a look at the following resources:
+- **마커 표시**: 지도에 다양한 마커를 추가하여 사용자에게 더 많은 정보를 제공합니다.
+- **영역 표시**: `polygon`을 이용하여 지도 내 특정 영역을 표시할 수 있는 기능을 추가할 예정입니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+이 프로젝트는 네이버맵 API를 활용하여 다양한 지도 기능을 제공하며, 사용자 경험을 향상시키기 위해 지속적으로 개선될 것입니다.
